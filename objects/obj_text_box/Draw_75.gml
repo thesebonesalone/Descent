@@ -1,0 +1,7 @@
+draw_set_color(make_color_rgb(65,65,255))
+draw_rectangle(12,840,1900,1064, false)
+draw_set_color(make_color_rgb(162,186,255))
+draw_rectangle(28,856,1884,1048, false)
+draw_set_color(c_white)
+draw_set_font(global.box_font)
+draw_text_ext_transformed(36,864,text_string, 8, 232, 8,8,0)

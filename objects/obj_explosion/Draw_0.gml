@@ -1,0 +1,1 @@
+draw_sprite_ext(spr_explosion,anim_frame,x,y,1.5,1.5,0,c_white,0.5)
