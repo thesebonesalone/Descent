@@ -11,6 +11,7 @@ if instance_exists(player)
 			instance_destroy(other)
 			with instance_create_depth(x,y,0,obj_fade_transition)
 			{
+				show_debug_message("game over")
 				trans_room = game_over	
 			}
 			

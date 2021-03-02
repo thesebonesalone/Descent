@@ -1,8 +1,10 @@
 
 if state != "emerge"
 {
-	
-	var claw_rot = point_direction(claw_x,claw_y,player.x,player.y) - 90
+	if instance_exists(player)
+	{
+		claw_rot = point_direction(claw_x,claw_y,player.x,player.y) - 90
+	}
 	if state = "wait"
 	{
 		image_index = 0
