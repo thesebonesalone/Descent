@@ -50,7 +50,12 @@ function leg_attack() {
 	{
 		leg_length = 32
 	}
-	var turn_to = point_direction(x,y,player.x,player.y)
+	if instance_exists(player)
+	{
+		var turn_to = point_direction(x,y,player.x,player.y)
+	} else {
+		var turn_to = 90
+	}
 	var turn_dif = angle - turn_to
 	var angle_dif = turn_dif
 	

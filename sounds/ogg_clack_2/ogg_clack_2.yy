@@ -13,8 +13,8 @@
   "soundFile": "ogg_clack_2.ogg",
   "duration": 1.565,
   "parent": {
-    "name": "BOTW Like",
-    "path": "BOTW Like.yyp",
+    "name": "Sounds",
+    "path": "folders/Sounds.yy",
   },
   "resourceVersion": "1.0",
   "name": "ogg_clack_2",

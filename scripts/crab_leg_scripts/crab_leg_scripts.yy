@@ -2,8 +2,8 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "CRAB BOSS",
-    "path": "folders/Scripts/CUTSCENE/CRAB BOSS.yy",
+    "name": "BOSSES",
+    "path": "folders/Scripts/ENEMY/BOSSES.yy",
   },
   "resourceVersion": "1.0",
   "name": "crab_leg_scripts",
