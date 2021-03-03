@@ -2,7 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function n_of_exits(arr){
 	var total = 0
-	for (var i = 0; i < array_length(arr); i ++)
+	for (var i = 0; i < 4; i ++)
 	{
 		if arr[i]
 		{

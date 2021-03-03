@@ -29,7 +29,7 @@
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_wall_generic","path":"objects/obj_wall_generic/obj_wall_generic.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":42.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":64.0,"y":64.0,"resourceVersion":"1.0","name":"inst_7AB0EC3D","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_wall_generic","path":"objects/obj_wall_generic/obj_wall_generic.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":40.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":720.0,"y":80.0,"resourceVersion":"1.0","name":"inst_2AE5C135","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"crab_boundary_1","path":"objects/crab_boundary_1/crab_boundary_1.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":4.0,"scaleY":3.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":368.0,"y":944.0,"resourceVersion":"1.0","name":"inst_7B84A0A0","tags":[],"resourceType":"GMRInstance",},
-        {"properties":[],"isDnd":false,"objectId":{"name":"obj_Player","path":"objects/obj_Player/obj_Player.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":400.0,"y":1008.0,"resourceVersion":"1.0","name":"inst_3B04CE31","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"obj_Player","path":"objects/obj_Player/obj_Player.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":400.0,"y":1008.0,"resourceVersion":"1.0","name":"inst_2EE7251B","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":16,"gridY":16,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Instances","tags":[],"resourceType":"GMRInstanceLayer",},
     {"tilesetId":{"name":"TileSet3","path":"tilesets/TileSet3/TileSet3.yy",},"x":0,"y":0,"tiles":{"SerialiseWidth":75,"SerialiseHeight":75,"TileSerialiseData":[
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -284,7 +284,7 @@
     {"name":"inst_7AB0EC3D","path":"rooms/crab_rangroom/crab_rangroom.yy",},
     {"name":"inst_2AE5C135","path":"rooms/crab_rangroom/crab_rangroom.yy",},
     {"name":"inst_7B84A0A0","path":"rooms/crab_rangroom/crab_rangroom.yy",},
-    {"name":"inst_3B04CE31","path":"rooms/crab_rangroom/crab_rangroom.yy",},
+    {"name":"inst_2EE7251B","path":"rooms/crab_rangroom/crab_rangroom.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

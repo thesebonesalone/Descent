@@ -117,7 +117,7 @@ dir = floor(random(4))
 		{
 			yy = 0
 		}
-		//if the movement stayed put or a five percent chance the direction changes
+		//if the movement stayed put or a fifty percent chance the direction changes
 		if (xx = px and yy = py) or (random(100) < 50)
 		{
 			dir = floor(random(4))
