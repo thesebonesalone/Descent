@@ -1,0 +1,1 @@
+draw_sprite(anim_sprite, anim_frame, x,y)

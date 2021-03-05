@@ -57,7 +57,7 @@ function crab_enemy_active(){
 function crab_enemy_dormant(){
 	sprite_index = noone
 	var player = instance_nearest(x,y,obj_Player)
-	if point_distance(x,y,player.x,player.y) < 150
+	if point_distance(x,y,player.x,player.y) < 64
 	{
 		state = "emerge"
 	}

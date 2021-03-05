@@ -90,19 +90,19 @@ function generate_area(){
 			switch room_string
 			{
 				case "left":
-					rooms = [grass_left_1, grass_left_2, grass_left_3]
+					rooms = [grass_left_1, grass_left_2, grass_left_3,grass_left_4,grass_left_5,grass_left_6]
 				break;
 				case "up":
-					rooms = [grass_up_1, grass_up_2, grass_up_3]
+					rooms = [grass_up_1, grass_up_2, grass_up_3, grass_up_4]
 				break;
 				case "down":
-					rooms = [grass_down_1, grass_down_2, grass_down_3]
+					rooms = [grass_down_1, grass_down_2, grass_down_3, grass_down_4, grass_down_5, grass_down_6]
 				break;
 				case "right":
-					rooms = [grass_right_1, grass_right_2, grass_right_3]
+					rooms = [grass_right_1, grass_right_2, grass_right_3, grass_right_4]
 				break;
 				case "updown":
-					rooms = [grass_updown_1, grass_updown_2, grass_updown_3]
+					rooms = [grass_updown_1, grass_updown_2, grass_updown_3, grass_updown_4]
 				break;
 				case "leftright":
 					rooms = [grass_leftright_1, grass_leftright_2, grass_leftright_3]
@@ -114,7 +114,7 @@ function generate_area(){
 					rooms = [grass_leftdown_1, grass_leftdown_2, grass_leftdown_3]
 				break;
 				case "upright":
-					rooms = [grass_upright_1, grass_upright_2, grass_upright_3]
+					rooms = [grass_upright_1, grass_upright_2, grass_upright_3, grass_upright_4]
 				break;
 				case "rightdown":
 					rooms = [grass_rightdown_1, grass_rightdown_2, grass_rightdown_3]
@@ -132,7 +132,7 @@ function generate_area(){
 					rooms = [grass_uprightdown_1, grass_uprightdown_2, grass_uprightdown_3]
 				break;
 				case "leftuprightdown":
-					rooms = [grass_leftuprightdown_1, grass_leftuprightdown_2, grass_leftuprightdown_3]
+					rooms = [grass_leftuprightdown_1, grass_leftuprightdown_2, grass_leftuprightdown_3, grass_leftuprightdown_4]
 				break;
 				
 			}
@@ -150,62 +150,6 @@ function generate_area(){
 			{
 				rooms = [grass_ender]
 				special_room = true
-			}
-			if i > 0 and i < 7 and j > 0 and j < 7
-			{
-				if i > 1
-				{
-					var left_exits = n_of_exits(global.room_list[i - 1][j])
-				} else {
-					var left_exits = 0
-				}
-				if i < 6
-				{
-					var right_exits = n_of_exits(global.room_list[i+1][j])
-				} else {
-					var right_exits = 0
-				}
-				if j > 1
-				{
-					var up_exits = n_of_exits(global.room_list[i][j-1])
-				} else {
-					var up_exits = 0
-				}
-				if j < 6
-				{
-					var down_exits = n_of_exits(global.room_list[i][j + 1])
-				} else {
-					var down_exits = 0
-				}
-				if puzzles > 0
-				{
-				
-					if up_exits = 1 and room_string = "updown"
-					{
-						special_room = true
-						rooms = [grass_up_puzzle_1]
-						show_debug_message("Puzzle!")
-						puzzles --
-					} else if right_exits = 1 and room_string = "leftright"
-					{
-						special_room = true
-						rooms = [grass_right_puzzle_1, grass_right_puzzle_2]
-						puzzles --
-						show_debug_message("Puzzle!")
-					} else if left_exits = 1 and room_string = "leftright"
-					{
-						special_room = true
-						rooms = [grass_left_puzzle_1, grass_left_puzzle_2]
-						puzzles --
-						show_debug_message("Puzzle!")
-					} else if down_exits = 1 and room_string = "updown"
-					{
-						special_room = true
-						rooms = [grass_down_puzzle_1]
-						puzzles --
-					}
-				
-				}
 			}
 			if room_string != ""
 			{
