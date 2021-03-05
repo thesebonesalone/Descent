@@ -6,6 +6,7 @@ state = "dormant"
 hp = 5
 anim_frame = 0
 anim_sprite = spr_bat_dormant
+frozen = false
 
 w = sprite_get_width(sprite_index)
 h = sprite_get_height(sprite_index)

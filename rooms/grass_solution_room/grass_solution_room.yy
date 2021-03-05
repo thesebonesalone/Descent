@@ -69,7 +69,7 @@
 2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,
 ],},"visible":true,"depth":300,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Ground_Decoration_Layer","tags":[],"resourceType":"GMRTileLayer",},
     {"tilesetId":{"name":"tile_overworld_grass","path":"tilesets/tile_overworld_grass/tile_overworld_grass.yy",},"x":0,"y":0,"tiles":{"SerialiseWidth":16,"SerialiseHeight":16,"TileSerialiseData":[
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,22,22,0,0,0,0,0,0,0,
 0,0,0,22,22,22,22,22,22,22,22,22,22,0,0,0,
 0,0,22,22,22,22,22,22,22,22,22,22,22,22,0,0,
 0,0,22,22,4,42,5,4,42,5,4,42,5,22,0,0,

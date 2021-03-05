@@ -57,7 +57,7 @@ function crab_enemy_active(){
 function crab_enemy_dormant(){
 	sprite_index = noone
 	var player = instance_nearest(x,y,obj_Player)
-	if point_distance(x,y,player.x,player.y) < 64
+	if instance_exists(player) and point_distance(x,y,player.x,player.y) < 64
 	{
 		state = "emerge"
 	}
@@ -68,7 +68,7 @@ function crab_enemy_wait(){
 	sprite_index = noone
 	var player = instance_nearest(x,y,obj_Player)
 	active_timer ++
-	if active_timer = 240
+	if active_timer = 240 and instance_exists(player)
 	{
 		sprite_index = spr_crab_walk
 		do

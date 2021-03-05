@@ -4,6 +4,7 @@ hit_cooldown = 0
 time_stopped = false
 state = "dormant"
 hp = 5
+frozen = false
 anim_frame = 0
 
 w = sprite_get_width(sprite_index)
