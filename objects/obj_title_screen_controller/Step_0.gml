@@ -4,7 +4,7 @@ if gamepad_is_connected(0)
 	start = start || gamepad_button_check_pressed(0,gp_start) || gamepad_button_check_pressed(0,gp_face1) || gamepad_button_check_pressed(0,gp_face2) || gamepad_button_check_pressed(0,gp_face3) || gamepad_button_check_pressed(0,gp_face4)
 }
 
-if start
+if start and !instance_exists(obj_fade_transition)
 {
 	audio_stop_sound(theme)
 	audio_play_sound(ogg_clack,1,false)

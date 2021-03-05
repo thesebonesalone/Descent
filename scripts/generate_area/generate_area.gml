@@ -9,6 +9,8 @@ function generate_area(){
 	var shop = 1
 	var treasure = 2
 	var puzzles = 3
+	var big_puzzle = false
+	var hints = 0
 	//generate room to add layers to
 	global.tester = room_add()
 	room_set_width(global.tester, 2048)
@@ -205,15 +207,30 @@ function generate_area(){
 				
 				}
 			}
-			
-			
-			
-			if j < 6 and j > 2 and random(100) < 25 and shop > 0 and !special_room
+			if room_string != ""
 			{
-				rooms = [grass_shop]
-				shop --
-				special_room = true
+				if random(100) < 25 and !big_puzzle and !special_room
+				{
+					rooms = [grass_solution_room]
+					special_room = true
+					big_puzzle = true
+				}
+			
+				if random(100) < 25 and hints < 3 and !special_room and big_puzzle
+				{
+					rooms = [grass_hint_room]
+					special_room = true
+					hints ++
+				}
+			
+			
+				if j < 6 and j > 2 and random(100) < 25 and shop > 0 and !special_room
+				{
+					rooms = [grass_shop]
+					shop --
+					special_room = true
 					
+				}
 			}
 			
 			

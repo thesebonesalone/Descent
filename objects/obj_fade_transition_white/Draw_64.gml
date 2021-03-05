@@ -1,10 +1,13 @@
+global.pause = true
 draw_set_alpha(alp)
+draw_set_color(c_white)
 draw_rectangle(0,0,1920,1080,false)
 alp += trans_dir
 draw_set_alpha(1)
 if alp = 0
 {
 	instance_destroy(self)
+	global.pause = false
 }
 if alp = 1
 {

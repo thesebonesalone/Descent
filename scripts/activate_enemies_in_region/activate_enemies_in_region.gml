@@ -8,9 +8,18 @@ function activate_enemies_in_region(){
 	{
 		with list[| i]
 		{
-			if state = "dormant"
+			if object_get_name(object_index) = "obj_chu_chu_blue" || object_get_name(object_index) = "obj_crab_enemy"
 			{
-				state = "active"
+				if state = "dormant"
+				{
+					state = "emerge"
+				}
+			} else
+			{
+				if state = "dormant"
+				{
+					state = "active"
+				}
 			}
 		}
 	}

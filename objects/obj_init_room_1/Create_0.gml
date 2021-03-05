@@ -1,10 +1,23 @@
 
 set_up_audio()
 theme = theme_level_1
+global.puzzle_solution = []
+for (var i = 0; i < 9; i ++)
+{
+	global.puzzle_solution[i] = false	
+}
 
 
-
-
+for (var i = 0; i < 4; i ++)
+{
+	var index = floor(random(9))
+	if global.puzzle_solution[index] = true
+	{
+		i --
+	} else {
+		global.puzzle_solution[index] = true
+	}
+}
 global.pause = false
 player = noone
 // Initiate Fonts
@@ -200,7 +213,7 @@ dir = floor(random(4))
 	
 	var xx = sx
 	var yy = sy
-	if count = 1 and room_count < 36
+	if count = 1 and room_count < 48
 	{
 		show_debug_message("Adding counts")
 		count ++

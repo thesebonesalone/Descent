@@ -22,7 +22,7 @@
 		instance_create_layer(xx,yy,"Instances", obj_wall_generic)	
 	}
 	
-	var objects = ["tree", "grass", "barrel", "campfire","water","metal_box","enemy","perm_pressure_switch","temp_pressure_switch","toggle_switch","bollard", "bollard_opposite", "small_chest","big_chest","magnesis","stasis","bombs","cryonis", "merchant","big_enemy_1","big_enemy_2","crab_boss_door"]
+	var objects = ["tree", "grass", "barrel", "campfire","water","metal_box","enemy","perm_pressure_switch","temp_pressure_switch","toggle_switch","bollard", "bollard_opposite", "small_chest","big_chest","magnesis","stasis","bombs","cryonis", "merchant","big_enemy_1","big_enemy_2","crab_boss_door", "hint_marker", "big_puzzle"]
 	for (var i = 0; i < array_length(global.object_list); i ++)
 	{
 		var xx = global.object_list[i][1] * 16
@@ -91,6 +91,13 @@
 				image_xscale = 2
 				image_yscale = 1.2
 			}
+			break;
+			case "hint_marker":
+			instance_create_depth(xx,yy,5,obj_puzzle_hint)
+			break;
+			case "big_puzzle":
+			instance_create_depth(xx,yy,5,obj_puzzle_input)
+			break;
 		}
 	}
 

@@ -14,5 +14,3 @@ active_timer = 0
 shake = 0
 // create object list
 //global.obj_list = ds_list_create()
-
-show_debug_message("oi")

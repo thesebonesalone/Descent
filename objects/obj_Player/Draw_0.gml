@@ -181,6 +181,7 @@ if (facing = 1 || facing = 2) and atc_x != noone
 
 
 draw_sprite(d_sprite,c_frame,x,y)
+
 if facing != 1 and facing != 2 and atc_x != noone
 {
 	draw_sprite_ext(weapon_sprite,0,x + atc_x - 8, y + atc_y - 8, 1,1, atc_rot,c_white,1)

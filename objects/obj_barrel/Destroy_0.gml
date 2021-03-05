@@ -9,10 +9,10 @@ for (var i = 0; i < 20; i ++)
 
 var rand_check = random(100)
 
-if rand_check < 10
+if rand_check < 5
 {
 	instance_create_depth(x+8,y+8,5,obj_heart)
-} else if rand_check < 25
+} else if rand_check < 17.5
 {
 	with instance_create_depth(x+8,y+8,5,obj_coin)
 	{
@@ -27,7 +27,7 @@ if rand_check < 10
 			worth = 20	
 		}
 	}
-} else if rand_check < 50
+} else if rand_check < 30
 {
 	instance_create_depth(x + 8,y + 8,5,obj_arrow_pickup)	
 }

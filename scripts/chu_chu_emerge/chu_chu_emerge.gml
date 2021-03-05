@@ -12,6 +12,7 @@ function chu_chu_emerge(){
 	emerge_timer ++
 	if emerge_timer >= 16
 	{
+		emerge_timer = 0
 		state = "active"
 	}
 
