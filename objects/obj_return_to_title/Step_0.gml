@@ -8,6 +8,6 @@ if start and !instance_exists(obj_fade_transition)
 {
 	with instance_create_depth(0,0,0,obj_fade_transition)
 	{
-		trans_room = start_room_screen	
+		trans_room = title_screen	
 	}
 }

@@ -11,10 +11,11 @@ if weapon_array[weapon_pointer][1] <= 0
 
 if pause_press
 {
-	if !global.pause
+	if ! global.pause
 	{
 		global.pause = true
-	} else {
+	} else
+	{
 		global.pause = false
 	}
 }

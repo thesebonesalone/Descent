@@ -1,0 +1,1 @@
+draw_surface_ext(global.pause_surf,0,0,0.25,0.25,0,c_white,1)

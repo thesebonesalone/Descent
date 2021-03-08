@@ -1,4 +1,4 @@
-
+created = false
 set_up_audio()
 theme = theme_level_1
 global.puzzle_solution = []

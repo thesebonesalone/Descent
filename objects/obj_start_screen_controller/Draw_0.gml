@@ -1,0 +1,1 @@
+draw_sprite_ext(spr_menu_cursor, 0, 32, 32 + cur_y * 32,2,2,0,c_white,1)
