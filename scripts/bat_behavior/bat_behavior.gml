@@ -48,3 +48,19 @@ function bat_active(){
 	x += lengthdir_x(speed,direction)
 	y += lengthdir_y(speed,direction)
 }
+
+function bat_hit(){
+
+	if hit_cooldown <= 0
+	{
+		state = "active"
+	}
+	var atk_dir = point_direction(attack_x,attack_y,x,y)
+	hsp = lengthdir_x(2,atk_dir)
+	vsp = lengthdir_y(2,atk_dir)
+	
+	x += hsp
+	y += vsp
+
+	
+}

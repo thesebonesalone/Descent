@@ -1,4 +1,4 @@
-
+		persistent = false
 		audio_play_sound(theme,1,true)
 		// set up camera in room
 		view_set_visible(view_camera[0], true)

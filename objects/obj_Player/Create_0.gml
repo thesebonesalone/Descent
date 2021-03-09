@@ -1,3 +1,4 @@
+pause_timer = 0
 right = false
 left = false
 up = false

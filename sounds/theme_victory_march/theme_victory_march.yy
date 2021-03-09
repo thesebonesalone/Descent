@@ -10,14 +10,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "ogg_victory_theme.OGG",
-  "duration": 5.98799324,
+  "soundFile": "theme_victory_march.OGG",
+  "duration": 44.7966347,
   "parent": {
     "name": "THEMES",
     "path": "folders/Sounds/THEMES.yy",
   },
   "resourceVersion": "1.0",
-  "name": "ogg_victory_theme",
+  "name": "theme_victory_march",
   "tags": [],
   "resourceType": "GMSound",
 }

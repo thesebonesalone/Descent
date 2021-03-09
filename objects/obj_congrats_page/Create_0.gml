@@ -1,0 +1,8 @@
+confetti_sys = part_system_create()
+confetti = part_type_create()
+part_type_sprite(confetti, spr_confetti,false,false,false)
+part_type_direction(confetti,0,360,false,false)
+part_type_speed(confetti,1,3,-0.01,false)
+part_type_color3(confetti,c_red,c_blue,c_green)
+part_type_gravity(confetti,0.1,270)
+part_type_orientation(confetti,0,360,0.1,false,false)

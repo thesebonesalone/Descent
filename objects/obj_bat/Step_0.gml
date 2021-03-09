@@ -14,7 +14,7 @@ if !global.pause
 		switch state
 		{
 			case "hit":
-				enemy_hit()
+				bat_hit()
 				break;
 			case "emerge":
 				bat_emerge()

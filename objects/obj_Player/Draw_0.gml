@@ -107,6 +107,12 @@ if !global.pause
 		}
 	
 	}
+	if state = "victory"
+	{
+		anim_frame = 0
+		d_sprite = spr_player_victory
+		c_frame = 0
+	}
 }
 
 

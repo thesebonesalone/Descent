@@ -9,5 +9,5 @@ with instance_create_depth(x-16, y - 16, 5, obj_boss_hitbox)
 	offset_y = 16
 }
 vulnerable = true
-hp = 5
+hp = 500
 rumble_snd = ogg_rumble

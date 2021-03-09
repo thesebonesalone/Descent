@@ -9,16 +9,14 @@ if weapon_array[weapon_pointer][1] <= 0
 			dpad_right_pressed = false
 		}
 
-if pause_press
+if pause_press and pause_timer < 0 and state != "victory"
 {
-	if ! global.pause
+	if !global.pause
 	{
-		global.pause = true
-	} else
-	{
-		global.pause = false
+		instance_create_depth(0,0,-10,pause_menu)
 	}
 }
+pause_timer --
 if !global.pause
 {
 	handle_power_cooldowns()
@@ -46,6 +44,9 @@ if !global.pause
 			break;
 		case "arrow":
 			player_arrow();
+			break;
+		case "victory":
+			player_victory();
 			break;
 	}
 

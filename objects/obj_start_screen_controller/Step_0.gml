@@ -1,9 +1,9 @@
 
 if !select
 {
-	select = keyboard_check_pressed(vk_enter) || keyboard_check_pressed(vk_space)
-	up = keyboard_check_pressed(ord("w")) || keyboard_check_pressed(vk_up)
-	down = keyboard_check_pressed(ord("s")) || keyboard_check_pressed(vk_down)
+	select = keyboard_check_pressed(vk_enter) || keyboard_check_pressed(vk_space) || keyboard_check_pressed(ord("E"))
+	up = keyboard_check_pressed(ord("W")) || keyboard_check_pressed(vk_up)
+	down = keyboard_check_pressed(ord("S")) || keyboard_check_pressed(vk_down)
 
 	if gamepad_is_connected(0)
 	{
@@ -32,7 +32,7 @@ if cur_y > 3
 	{
 		if cur_y = 0 
 		{
-			audio_stop_sound(global.title_theme)
+			audio_stop_all()
 			audio_play_sound(ogg_clack,1,false)
 			with instance_create_depth(0,0,0,obj_fade_transition)
 			{
@@ -45,7 +45,7 @@ if cur_y > 3
 		}
 		if cur_y = 2
 		{
-			select = false	
+			room_goto(about_page)
 		}
 		if cur_y = 3
 		{

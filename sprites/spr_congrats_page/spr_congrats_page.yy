@@ -7,10 +7,10 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 49,
-  "bbox_right": 190,
-  "bbox_top": 33,
-  "bbox_bottom": 110,
+  "bbox_left": 0,
+  "bbox_right": 239,
+  "bbox_top": 0,
+  "bbox_bottom": 134,
   "HTile": false,
   "VTile": false,
   "For3D": false,
@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"7b925e2e-a021-4191-afab-9189f19b88bf","path":"sprites/spr_pause_screen/spr_pause_screen.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"7b925e2e-a021-4191-afab-9189f19b88bf","path":"sprites/spr_pause_screen/spr_pause_screen.yy",},"LayerId":{"name":"64f61e4f-4374-4030-98ce-e3511f5a78d1","path":"sprites/spr_pause_screen/spr_pause_screen.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_pause_screen","path":"sprites/spr_pause_screen/spr_pause_screen.yy",},"resourceVersion":"1.0","name":"7b925e2e-a021-4191-afab-9189f19b88bf","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"7a6eff4b-6b8a-438f-ac32-f7da0fb69b75","path":"sprites/spr_congrats_page/spr_congrats_page.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"7a6eff4b-6b8a-438f-ac32-f7da0fb69b75","path":"sprites/spr_congrats_page/spr_congrats_page.yy",},"LayerId":{"name":"5ca4f813-4cd9-47e1-bc52-92b51e3d3a53","path":"sprites/spr_congrats_page/spr_congrats_page.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_congrats_page","path":"sprites/spr_congrats_page/spr_congrats_page.yy",},"resourceVersion":"1.0","name":"7a6eff4b-6b8a-438f-ac32-f7da0fb69b75","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_pause_screen","path":"sprites/spr_pause_screen/spr_pause_screen.yy",},
+    "spriteId": {"name":"spr_congrats_page","path":"sprites/spr_congrats_page/spr_congrats_page.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"b3650b15-f159-42e9-83d6-aa1f422123ef","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7b925e2e-a021-4191-afab-9189f19b88bf","path":"sprites/spr_pause_screen/spr_pause_screen.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"d1e866af-f65b-4b36-aec1-9f648016ee82","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7a6eff4b-6b8a-438f-ac32-f7da0fb69b75","path":"sprites/spr_congrats_page/spr_congrats_page.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -58,21 +58,21 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_pause_screen","path":"sprites/spr_pause_screen/spr_pause_screen.yy",},
+    "parent": {"name":"spr_congrats_page","path":"sprites/spr_congrats_page/spr_congrats_page.yy",},
     "resourceVersion": "1.3",
-    "name": "spr_pause_screen",
+    "name": "spr_congrats_page",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"64f61e4f-4374-4030-98ce-e3511f5a78d1","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"5ca4f813-4cd9-47e1-bc52-92b51e3d3a53","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
     "name": "SCREENS",
     "path": "folders/Sprites/SCREENS.yy",
   },
   "resourceVersion": "1.0",
-  "name": "spr_pause_screen",
+  "name": "spr_congrats_page",
   "tags": [],
   "resourceType": "GMSprite",
 }
