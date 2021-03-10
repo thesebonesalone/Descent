@@ -18,7 +18,26 @@
   "out_tilevborder": 2,
   "out_columns": 20,
   "tile_count": 400,
-  "autoTileSets": [],
+  "autoTileSets": [
+    {"tiles":[
+        20,
+        43,
+        41,
+        42,
+        3,
+        23,
+        45,
+        4,
+        1,
+        44,
+        21,
+        5,
+        2,
+        24,
+        25,
+        22,
+      ],"closed_edge":false,"resourceVersion":"1.0","name":"autotile_1","tags":[],"resourceType":"GMAutoTileSet",},
+  ],
   "tileAnimationFrames": [
     {"frames":[
         72,
@@ -1669,8 +1688,8 @@
     "TileSerialiseData": [],
   },
   "parent": {
-    "name": "Tile Sets",
-    "path": "folders/Tile Sets.yy",
+    "name": "BOTW Like",
+    "path": "BOTW Like.yyp",
   },
   "resourceVersion": "1.0",
   "name": "tile_overworld_grass",
