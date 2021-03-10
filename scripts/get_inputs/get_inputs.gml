@@ -22,10 +22,10 @@ function get_inputs(){
 		if gamepad_is_connected(0) 
 		{
 			pause_press = pause_press || gamepad_button_check_pressed(0,gp_start)
-			down = down || gamepad_axis_value(0, gp_axislv) > 0.25
-			up = up || gamepad_axis_value(0, gp_axislv) < -0.25
-			left = left || gamepad_axis_value(0, gp_axislh) < -0.25
-			right = right || gamepad_axis_value(0, gp_axislh) > 0.25
+			down = down || gamepad_axis_value(0, gp_axislv) > 0.5
+			up = up || gamepad_axis_value(0, gp_axislv) < -0.5
+			left = left || gamepad_axis_value(0, gp_axislh) < -0.5
+			right = right || gamepad_axis_value(0, gp_axislh) > 0.5
 			var aim_x = gamepad_axis_value(0, gp_axislh)
 			var aim_y = gamepad_axis_value(0,gp_axislv)
 			aim_angle = point_direction(x,y, x + aim_x, y + aim_y)

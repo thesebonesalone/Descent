@@ -45,9 +45,10 @@ with other
 			}
 		
 			part_particles_create(global.part_sys_fire,xx,yy,global.part_enemy_boom,20)
-			var wall = instance_nearest(xx,yy,obj_wall_generic)
-			instance_destroy(wall)
+			
 		}
+		var wall = instance_nearest(x,y,obj_wall_generic)
+		instance_destroy(wall)
 		instance_destroy(other)
 	}
 	

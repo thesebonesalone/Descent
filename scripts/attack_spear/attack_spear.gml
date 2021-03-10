@@ -10,27 +10,56 @@ function attack_spear(){
 	{
 		did_hit = false
 		play_slash_sounds()
-		var list = ds_list_create()
-		for ( var i = -20; i < 20; i += 5) {
-			var num =  collision_line_list(x,y,x + lengthdir_x(40,dir + i), y + lengthdir_y(40, dir + i),obj_enemy_generic,false,true,list,false)
-			for (var j = 0; j < num ; j ++)
+		with obj_enemy_generic
 			{
-				with list[| j]
+				var x1 = other.x
+				var y1 = other.y
+				var cdir = other.dir
+				var x2 = x1 + lengthdir_x(40,cdir - 20)
+				var y2 = y1 + lengthdir_y(40, cdir - 20)
+				var x3 = x1 + lengthdir_x(40,cdir + 20)
+				var y3 = y1 + lengthdir_y(40, cdir + 20)
+				var x4 = x1 + lengthdir_x(40,cdir)
+				var y4 = y1 + lengthdir_y(40,cdir)
+				var is_hit = point_in_triangle(bbox_left,bbox_top,x1,y1,x2,y2,x3,y3) || point_in_triangle(bbox_left,bbox_bottom,x1,y1,x2,y2,x3,y3) || point_in_triangle(bbox_right,bbox_top,x1,y1,x2,y2,x3,y3) || point_in_triangle(bbox_right,bbox_bottom,x1,y1,x2,y2,x3,y3)
+				is_hit = is_hit || point_in_triangle(bbox_left,bbox_top,x4,y4,x2,y2,x3,y3) || point_in_triangle(bbox_left,bbox_bottom,x4,y4,x2,y2,x3,y3) || point_in_triangle(bbox_right,bbox_top,x4,y4,x2,y2,x3,y3) || point_in_triangle(bbox_right,bbox_bottom,x4,y4,x2,y2,x3,y3)
+				if is_hit
 				{
 					if hit_cooldown <= 0
 					{
 						activate_enemies_in_region()
 						make_hit_marker(other,self)
+						other.did_hit = true
 						state = "hit"
 						attack_x = other.x
 						attack_y = other.y
 						hit_cooldown = 16
-						other.did_hit = true
 						hp -= other.weapon_array[other.weapon_pointer][3] * (1 + 2 * (state = "dormant")) 
 					}
 				}
+				
 			}
-			ds_list_empty(list)
+		var list = ds_list_create()
+		for ( var i = -20; i < 20; i += 5) {
+		//	var num =  collision_line_list(x,y,x + lengthdir_x(40,dir + i), y + lengthdir_y(40, dir + i),obj_enemy_generic,false,true,list,false)
+		//	for (var j = 0; j < num ; j ++)
+		//	{
+		//		with list[| j]
+		//		{
+		//			if hit_cooldown <= 0
+		//			{
+		//				activate_enemies_in_region()
+		//				make_hit_marker(other,self)
+		//				state = "hit"
+		//				attack_x = other.x
+		//				attack_y = other.y
+		//				hit_cooldown = 16
+		//				other.did_hit = true
+		//				hp -= other.weapon_array[other.weapon_pointer][3] * (1 + 2 * (state = "dormant")) 
+		//			}
+		//		}
+		//	}
+		//	ds_list_empty(list)
 			
 			with collision_line(x,y,x + lengthdir_x(40,dir + i), y + lengthdir_y(40, dir + i),obj_barrel,false,true)
 			{

@@ -1,3 +1,8 @@
+if gamepad_is_connected(0)
+{
+	gamepad_set_axis_deadzone(0, 0.25)
+}
+
 pause_timer = 0
 right = false
 left = false

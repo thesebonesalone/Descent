@@ -28,7 +28,7 @@
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_wall_generic","path":"objects/obj_wall_generic/obj_wall_generic.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":80.0,"y":48.0,"resourceVersion":"1.0","name":"inst_5DBDB4BE","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_wall_generic","path":"objects/obj_wall_generic/obj_wall_generic.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":2.0,"scaleY":5.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":96.0,"y":16.0,"resourceVersion":"1.0","name":"inst_1A792F85","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":16,"gridY":16,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Instances","tags":[],"resourceType":"GMRInstanceLayer",},
-    {"tilesetId":{"name":"tile_overworld_grass","path":"tilesets/tile_overworld_grass/tile_overworld_grass.yy",},"x":0,"y":0,"tiles":{"SerialiseWidth":8,"SerialiseHeight":8,"TileSerialiseData":[
+    {"tilesetId":null,"x":0,"y":0,"tiles":{"SerialiseWidth":8,"SerialiseHeight":8,"TileSerialiseData":[
 2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,
 2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,61,63,
 2147483648,2147483648,2147483648,2147483648,82,82,81,83,
@@ -38,7 +38,7 @@
 2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,
 2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,
 ],},"visible":true,"depth":200,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Wall_Layer","tags":[],"resourceType":"GMRTileLayer",},
-    {"tilesetId":{"name":"tile_overworld_grass","path":"tilesets/tile_overworld_grass/tile_overworld_grass.yy",},"x":0,"y":0,"tiles":{"SerialiseWidth":8,"SerialiseHeight":8,"TileSerialiseData":[
+    {"tilesetId":null,"x":0,"y":0,"tiles":{"SerialiseWidth":8,"SerialiseHeight":8,"TileSerialiseData":[
 2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,
 2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,
 2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,
@@ -48,7 +48,7 @@
 2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,
 2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,
 ],},"visible":true,"depth":300,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Ground_Decoration_Layer","tags":[],"resourceType":"GMRTileLayer",},
-    {"tilesetId":{"name":"tile_overworld_grass","path":"tilesets/tile_overworld_grass/tile_overworld_grass.yy",},"x":0,"y":0,"tiles":{"SerialiseWidth":8,"SerialiseHeight":8,"TileSerialiseData":[
+    {"tilesetId":null,"x":0,"y":0,"tiles":{"SerialiseWidth":8,"SerialiseHeight":8,"TileSerialiseData":[
 22,22,22,22,22,22,22,22,
 22,4,42,42,42,42,5,22,
 22,23,20,20,20,20,21,22,

@@ -3,7 +3,7 @@
 function player_magnesis_use(){
 	
 	var list = ds_list_create()
-	var num = collision_circle_list(x,y,240,obj_enemy_generic,false,true,list,false)
+	var num = collision_circle_list(x,y,120,obj_enemy_generic,false,true,list,false)
 	for (var i = 0; i < num; i ++)
 	{
 		with list[| i]
@@ -22,4 +22,14 @@ function player_magnesis_use(){
 			}
 		}
 	}
+	var num = collision_circle_list(x,y,120,obj_metal_box,false,true,list,false)
+	for (var i = 0; i < num; i ++)
+	{
+		with list[| i]
+		{
+			stasis_speed = 7
+			stasis_dir = point_direction(other.x,other.y,x,y)
+		}
+	}
+	ds_list_destroy(list)
 }

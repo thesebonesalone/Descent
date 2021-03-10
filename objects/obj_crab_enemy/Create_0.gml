@@ -6,6 +6,7 @@ state = "dormant"
 hp = 5
 frozen = false
 anim_frame = 0
+weapon = pointer_null
 
 w = sprite_get_width(sprite_index)
 h = sprite_get_height(sprite_index)
