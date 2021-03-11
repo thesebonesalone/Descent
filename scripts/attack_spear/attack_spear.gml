@@ -14,16 +14,7 @@ function attack_spear(){
 			{
 				var x1 = other.x
 				var y1 = other.y
-				var cdir = other.dir
-				var x2 = x1 + lengthdir_x(40,cdir - 20)
-				var y2 = y1 + lengthdir_y(40, cdir - 20)
-				var x3 = x1 + lengthdir_x(40,cdir + 20)
-				var y3 = y1 + lengthdir_y(40, cdir + 20)
-				var x4 = x1 + lengthdir_x(40,cdir)
-				var y4 = y1 + lengthdir_y(40,cdir)
-				var is_hit = point_in_triangle(bbox_left,bbox_top,x1,y1,x2,y2,x3,y3) || point_in_triangle(bbox_left,bbox_bottom,x1,y1,x2,y2,x3,y3) || point_in_triangle(bbox_right,bbox_top,x1,y1,x2,y2,x3,y3) || point_in_triangle(bbox_right,bbox_bottom,x1,y1,x2,y2,x3,y3)
-				is_hit = is_hit || point_in_triangle(bbox_left,bbox_top,x4,y4,x2,y2,x3,y3) || point_in_triangle(bbox_left,bbox_bottom,x4,y4,x2,y2,x3,y3) || point_in_triangle(bbox_right,bbox_top,x4,y4,x2,y2,x3,y3) || point_in_triangle(bbox_right,bbox_bottom,x4,y4,x2,y2,x3,y3)
-				if is_hit
+				if hit_by_swing(20, 40, x1,y1,other.dir,self)
 				{
 					if hit_cooldown <= 0
 					{

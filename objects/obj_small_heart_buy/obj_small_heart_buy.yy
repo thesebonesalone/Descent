@@ -25,10 +25,11 @@
   "physicsShapePoints": [],
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":2,"collisionObjectId":null,"parent":{"name":"obj_small_heart_buy","path":"objects/obj_small_heart_buy/obj_small_heart_buy.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"parent":{"name":"obj_small_heart_buy","path":"objects/obj_small_heart_buy/obj_small_heart_buy.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [
-    {"propertyId":{"name":"price","path":"objects/obj_shop_item/obj_shop_item.yy",},"objectId":{"name":"obj_shop_item","path":"objects/obj_shop_item/obj_shop_item.yy",},"value":"25","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"price","path":"objects/obj_shop_item/obj_shop_item.yy",},"objectId":{"name":"obj_shop_item","path":"objects/obj_shop_item/obj_shop_item.yy",},"value":"50","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
     {"propertyId":{"name":"buy_sprite","path":"objects/obj_shop_item/obj_shop_item.yy",},"objectId":{"name":"obj_shop_item","path":"objects/obj_shop_item/obj_shop_item.yy",},"value":"spr_heart_pup","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
   ],
   "parent": {

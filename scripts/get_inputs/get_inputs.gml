@@ -1,6 +1,7 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function get_inputs(){
+		
 		up = keyboard_check(ord("W"))
 		right = keyboard_check(ord("D"))
 		left = keyboard_check(ord("A"))
@@ -22,12 +23,26 @@ function get_inputs(){
 		if gamepad_is_connected(0) 
 		{
 			pause_press = pause_press || gamepad_button_check_pressed(0,gp_start)
-			down = down || gamepad_axis_value(0, gp_axislv) > 0.5
-			up = up || gamepad_axis_value(0, gp_axislv) < -0.5
-			left = left || gamepad_axis_value(0, gp_axislh) < -0.5
-			right = right || gamepad_axis_value(0, gp_axislh) > 0.5
-			var aim_x = gamepad_axis_value(0, gp_axislh)
-			var aim_y = gamepad_axis_value(0,gp_axislv)
+			down = down || gamepad_button_check(0,gp_padd)
+			up = up || gamepad_button_check(0,gp_padu)
+			left = left || gamepad_button_check(0,gp_padl)
+			right = right || gamepad_button_check(0,gp_padr)
+			var gpaxh = gamepad_axis_value(0, gp_axislh)
+			var gpaxv = gamepad_axis_value(0, gp_axislv)
+			var axup = gpaxv > 0.5
+			var axdn = gpaxv < -0.5
+			var axlf = gpaxh > 0.5
+			var axrt = gpaxh < -0.5
+			
+			
+			var aim_x = 0
+			var aim_y = 0
+			
+			if axup || axdn || axlf || axrt
+			{
+				aim_x = gpaxh
+				aim_y = gpaxv
+			}
 			aim_angle = point_direction(x,y, x + aim_x, y + aim_y)
 			attack_press = attack_press || gamepad_button_check_pressed(0, gp_face3)
 			attack_hold = attack_hold || gamepad_button_check(0, gp_face3)
@@ -35,11 +50,11 @@ function get_inputs(){
 			power_hold = power_hold || gamepad_button_check(0, gp_face4)
 			dodge_press = dodge_press || gamepad_button_check_pressed(0,gp_face2)
 			dodge_hold = dodge_hold || gamepad_button_check(0, gp_face2)
-			dpad_up_pressed = dpad_up_pressed || gamepad_button_check_pressed(0, gp_padu)
-			dpad_down_pressed = dpad_down_pressed || gamepad_button_check_pressed(0, gp_padd)
-			dpad_left_pressed = dpad_left_pressed || gamepad_button_check_pressed(0, gp_padl)
-			dpad_right_pressed = dpad_right_pressed || gamepad_button_check_pressed(0, gp_padr)
+			dpad_up_pressed = dpad_up_pressed || gamepad_button_check_pressed(0, gp_shoulderrb)
+			dpad_down_pressed = dpad_down_pressed
+			dpad_left_pressed = dpad_left_pressed || gamepad_button_check_pressed(0, gp_shoulderl)
+			dpad_right_pressed = dpad_right_pressed || gamepad_button_check_pressed(0, gp_shoulderr)
 			pickup_pressed = pickup_pressed || gamepad_button_check_pressed(0, gp_face1)
-			arrow_hold = arrow_hold || gamepad_button_check(0, gp_shoulderrb)
+			arrow_hold = arrow_hold  || gamepad_button_check(0, gp_shoulderlb)
 		}
 }

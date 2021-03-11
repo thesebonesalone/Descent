@@ -1,0 +1,1 @@
+draw_sprite(spr_big_chest, (open = true) * 1, x,y)

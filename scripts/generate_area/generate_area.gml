@@ -219,6 +219,7 @@ function generate_area(){
 			
 			
 			var rm_generic = room_duplicate(rooms[floor(random(array_length(rooms)))])
+			
 			var wall_tile = 0
 			var decoration_tile = 0
 			var ground_tile = 0

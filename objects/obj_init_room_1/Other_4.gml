@@ -13,6 +13,7 @@
 			other.player = self
 			persistent = true
 		}
+		
 		var bg_lay_id = layer_get_id("Background")
 		bg_id = layer_background_get_id(bg_lay_id)
 	
@@ -84,6 +85,9 @@
 				break;
 				case "small_chest":
 				instance_create_depth(xx,yy,5,obj_small_chest);
+				break;
+				case "big_chest":
+				instance_create_depth(xx,yy,5,obj_big_chest);
 				break;
 				case "crab_boss_door":
 				with instance_create_depth(xx,yy,5,obj_door)

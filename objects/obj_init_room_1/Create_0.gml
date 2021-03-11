@@ -1,3 +1,4 @@
+map_surf = surface_create(32,32)
 created = false
 set_up_audio()
 theme = theme_level_1
@@ -74,6 +75,7 @@ part_type_orientation(global.part_enemy_boom,0,0,0,0,true)
 global.wall_list = []
 global.object_list = []
 global.room_list = []
+map_array = []
 
 //background movement variables
 bg_id = noone
@@ -81,12 +83,16 @@ var room_count = 0
 
 for (var i = 0; i < 8; i ++)
 {
+	map_array[i] = []
 	global.room_list[i] = []
 	for (var j = 0; j < 8; j ++)
 	{
+		map_array[i][j] = [false,false,false,false]
 		global.room_list[i][j] = [false,false,false,false]
 	}
 }
+
+
 
 // set starter and end room
 sx = floor(random(8))
@@ -159,7 +165,7 @@ dir = floor(random(4))
 		if !global.room_list[xx][yy][0] and !global.room_list[xx][yy][1] and !global.room_list[xx][yy][2] and !global.room_list[xx][yy][3]
 		{
 			room_count ++
-			show_debug_message(room_count)
+			
 		}
 		
 		
@@ -215,7 +221,7 @@ dir = floor(random(4))
 	var yy = sy
 	if count = 1 and room_count < 48
 	{
-		show_debug_message("Adding counts")
+		
 		count ++
 	}
 	count -= 1
@@ -249,7 +255,7 @@ for (i = 2; i < 6; i ++)
 		{
 			macrotest = [i,j]
 			
-			show_debug_message("It's a macro!")
+			
 			
 			//turn off exits to expand macro
 			global.room_list[i][j][2] = false
